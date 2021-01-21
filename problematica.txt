@@ -1,0 +1,35 @@
+1. Inicio
+2. funcion principal()
+3.	mensaje, X(20) [{ A-Z}, {a-z}, {0-9}, {BS}]
+4. 	opcion, i[0,n]
+5.	mensaje <-- descomponer()
+6.	Escribir mensaje 	
+7. Fin funcion principal()
+8.
+9. funcion descomponer (); String
+10 	K, d[0-n]
+11.	k1, d[0-n] <-- 0
+12.	j, i[0-n] <-- 0
+13.	cadenF, X(20) [{ A-Z}, {a-z}, {0-9}, {BS}]
+14.	residuo, i[0-n]
+15.	Escribir "Ingresar el valor a descomponer"
+16.	Leer k
+17. 	k1 <-- k
+18.	Mientras (k1 > 0) entonces 
+19.		residuo <-- obtenerResiduo(k1)
+20.		cadenaF <-- cadenaF +residuo + "* 10 elevado a la potencia " + j
+21.		k1 <-- k1/10
+22.		j = j + 1 
+23. Fin Mientras
+24. return cadenaF
+25. fin funcion descomponer()
+26.
+27. funcion obtenerResiduo(x, i); i
+28.	z, i[0-n]
+29. 	z <-- x MOD 10
+30.	return z
+31. Fin funcion obtenerResiduo() 
+32.
+33. Fin
+
+		 
